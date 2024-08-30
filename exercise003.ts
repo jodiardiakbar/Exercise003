@@ -12,3 +12,12 @@ while (i < originalCharacter.length) {
   i++;
 }
 console.log(`${originalCharacter} -> ${swapCaseCharacter}`);
+
+// 2. largest integers
+let num1: number = 42;
+let num2: number = 27;
+if (num1 > num2) {
+  console.log(num1);
+} else {
+  console.log(num2);
+}
