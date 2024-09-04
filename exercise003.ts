@@ -78,14 +78,19 @@ let _str6: string = `hello world`
 console.log(_str6.split(' ').length)
 let loopIndex: number = _str6.split(' ').length
 let _newWord: string[] = [];
-let newWord: string = ''
+let uppercaseWord: string = ''
 for (let i = 0; i < loopIndex; i++) {
     console.log(_str6.split(' ')[i].charAt(0).toUpperCase())
     _newWord.push(_str6.split(' ')[i].charAt(0).toUpperCase() + _str6.split(' ')[i].slice(1))
-    newWord +=  _str6.split(' ')[i].charAt(0).toUpperCase() + _str6.split(' ')[i].slice(1) + ' '
+    
+    if (i === loopIndex) {
+      uppercaseWord += _str6.split(' ')[i].charAt(0).toUpperCase() + _str6.split(' ')[i].slice(1)
+    } else {
+      uppercaseWord += _str6.split(' ')[i].charAt(0).toUpperCase() + _str6.split(' ')[i].slice(1) + ' '
+    }
 }
-console.log(_newWord)
-console.log(newWord)
+console.log(`${_str6} -> ${_newWord.join(' ')}`)
+console.log(uppercaseWord)
 
 // 1. Character case swap
 let originalCharacter: string = `The QuiCk BrOwN Fox`;
