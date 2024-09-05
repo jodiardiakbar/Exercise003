@@ -117,9 +117,29 @@ if (num1 > num2) {
 }
 
 // 3. sort three numbers
-let num3: number = 42;
+let num3: number = 3;
 let num4: number = 27;
-let num5: number = 18;
+let num5: number = 50;
+
+if (num5 < num4 && num5 < num3) {
+  if (num4 < num3) {
+    console.log(`${num5}, ${num4}, ${num3}`)
+  } else {
+    console.log(`${num5}, ${num3}, ${num4}`)
+  }
+} else if (num4 < num5 && num4 < num3) {
+  if (num5 < num3) {
+    console.log(`${num4}, ${num5}, ${num3}`)
+  } else {
+    console.log(`${num4}, ${num3}, ${num5}`)
+  }
+} else if (num3 < num5 && num3 < num4) {
+  if (num5 < num4) {
+    console.log(`${num3}, ${num5}, ${num4}`)
+  } else {
+    console.log(`${num3}, ${num4}, ${num5}`)
+  }
+
 
 // 4. input checker
 let _input = 100;
